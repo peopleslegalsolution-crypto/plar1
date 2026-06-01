@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation - People's Legal Associates and Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/legal.css?v=21">
+</head>
+<body data-theme="dark">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="PLAR home">
+      <span class="brand-mark"><img src="/home/plar-seal-full.png" alt=""></span>
+      <span class="brand-text">PLAR</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" data-i18n="menu">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#home" data-i18n="navHome">Home</a>
+      <a href="index.html#services" data-i18n="navServices">Services</a>
+      <a href="index.html#expertise" data-i18n="navExpertise">Expertise</a>
+      <a href="index.html#values" data-i18n="navValues">Values</a>
+      <a href="index.html#about" data-i18n="navAbout">About Us</a>
+      <a href="consultation.html" data-i18n="navConsultation">Consultation</a>
+      <a href="index.html#contact" data-i18n="navContact">Contact Us</a>
+    </nav>
+    <div class="site-actions" aria-label="Display options">
+      <div class="segmented-control" role="group" aria-label="Theme">
+        <button type="button" class="mode-option is-active" data-theme-choice="dark" data-i18n="darkMode">Dark</button>
+        <button type="button" class="mode-option" data-theme-choice="light" data-i18n="lightMode">White</button>
+        <button type="button" class="mode-option" data-theme-choice="bright" data-i18n="brightMode">Bright</button>
+      </div>
+      <button type="button" class="language-toggle" data-lang-toggle data-i18n="languageButton">नेपाली</button>
+      <a class="header-cta" href="#booking" data-i18n="bookConsultation">Book Consultation</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section consultation-hero">
+      <div class="wrap page-kicker" data-i18n="kicker">Legal Help Desk</div>
+      <div class="wrap consultation-grid">
+        <div>
+          <h1 data-i18n="heroTitle">Write your legal problem and request a consultation.</h1>
+          <p class="consultation-lead" data-i18n="heroBody">Your message is saved in the server database and sent to peoplelegalsolution@gmail.com when EmailJS is configured. For urgent matters, contact Advocate Gopal Datt Pandey at 9851089120.</p>
+        </div>
+        <aside class="lawyer-mini-card">
+          <span data-i18n="recommended">Recommended Lawyer</span>
+          <h2>Gopal Datt Pandey</h2>
+          <a href="tel:+9779851089120">9851089120</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section soft-band">
+      <div class="wrap form-chat-grid">
+        <section class="tool-card">
+          <h2 data-i18n="problemTitle">Submit Your Problem</h2>
+          <form id="problemForm" class="smart-form">
+            <label><span data-i18n="fullName">Full name</span> <input name="name" type="text" autocomplete="name" required></label>
+            <label><span data-i18n="phone">Phone number</span> <input name="phone" type="tel" autocomplete="tel" required></label>
+            <label><span data-i18n="email">Email</span> <input name="email" type="email" autocomplete="email"></label>
+            <label>
+              <span data-i18n="caseType">Case type</span>
+              <select name="caseType" required>
+                <option value="" data-i18n="selectCase">Select a case type</option>
+                <option data-i18n="caseProperty">Property or land dispute</option>
+                <option data-i18n="caseFamily">Family or divorce matter</option>
+                <option data-i18n="caseBusiness">Business or company issue</option>
+                <option data-i18n="caseContract">Contract or money recovery</option>
+                <option data-i18n="caseCriminal">Criminal matter</option>
+                <option data-i18n="caseVisa">Visa, NRN or foreign investment</option>
+                <option data-i18n="caseOther">Other legal problem</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="writeProblem">Write your problem</span>
+              <textarea name="problem" rows="7" required placeholder="Describe what happened, important dates, people involved, and what help you need." data-i18n-placeholder="problemPlaceholder"></textarea>
+            </label>
+            <button class="dark-button form-button" type="submit" data-i18n="submit">Submit</button>
+            <p id="problemStatus" class="form-status" role="status"></p>
+          </form>
+        </section>
+
+        <section class="tool-card chatbot-card" aria-label="Legal chatbot">
+          <h2 data-i18n="chatbotTitle">Legal Chatbot</h2>
+          <div id="chatLog" class="chat-log">
+            <p class="bot-message" data-i18n="chatGreeting">Hello. Ask me about your legal issue, documents, case process, or consultation. For case-specific help, I will refer you to Advocate Gopal Datt Pandey, phone 9851089120.</p>
+          </div>
+          <form id="chatForm" class="chat-form">
+            <input id="chatInput" type="text" placeholder="Ask about cases, documents, fees, property..." autocomplete="off" required data-i18n-placeholder="chatPlaceholder">
+            <button type="submit" data-i18n="send">Send</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section id="booking" class="section">
+      <div class="wrap booking-layout">
+        <section class="tool-card">
+          <h2 data-i18n="bookingTitle">Book Consultation</h2>
+          <p data-i18n="bookingBody">After booking, the system gives an appointment date one or two days from today and saves it in the server database.</p>
+          <form id="bookingForm" class="smart-form">
+            <label><span data-i18n="fullName">Full name</span> <input name="name" type="text" autocomplete="name" required></label>
+            <label><span data-i18n="phone">Phone number</span> <input name="phone" type="tel" autocomplete="tel" required></label>
+            <label><span data-i18n="email">Email</span> <input name="email" type="email" autocomplete="email"></label>
+            <label><span data-i18n="topic">Consultation topic</span> <input name="topic" type="text" required placeholder="Example: land dispute, divorce, company registration" data-i18n-placeholder="topicPlaceholder"></label>
+            <label>
+              <span data-i18n="timing">Preferred timing</span>
+              <select name="timing" required>
+                <option data-i18n="timingOne">Earliest available, 1 day after booking</option>
+                <option data-i18n="timingTwo">2 days after booking</option>
+              </select>
+            </label>
+            <button class="dark-button form-button" type="submit" data-i18n="book">Book</button>
+            <p id="bookingStatus" class="form-status" role="status"></p>
+          </form>
+        </section>
+
+        <aside class="records-card">
+          <h2 data-i18n="recordsTitle">Saved Records</h2>
+          <p data-i18n="recordsBody">Recent problems and bookings saved on the server.</p>
+          <div id="savedRecords" class="saved-records"></div>
+          <button id="clearRecords" class="clear-button" type="button" data-i18n="clearRecords">Clear Local Records</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p data-i18n="copyright">Copyright (c) 2022 SOLVING LEGAL PROBLEMS WITH ADVOCATE GOPAL DUTTA PANDEY - All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/consultation.js?v=2"></script>
+</body>
+</html>

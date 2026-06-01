@@ -1,0 +1,67 @@
+{
+  "records": [
+    {
+      "type": "Consultation Booking",
+      "name": "anil",
+      "phone": "9862732026",
+      "email": "nirajpandey10521@gmail.com",
+      "topic": "land",
+      "timing": "Earliest available, 1 day after booking",
+      "appointment": "Tuesday, June 2, 2026",
+      "id": "0dfba694-f7cd-4bd7-94a8-a09579d6d8dc",
+      "createdAt": "2026-06-01T14:40:28.141Z",
+      "emailSent": false,
+      "emailMessage": "Saved to database, but EmailJS returned 403: API access from non-browser environments is currently disabled.Enable this option in https://dashboard.emailjs.com/admin/account/security"
+    },
+    {
+      "type": "Consultation Booking",
+      "name": "Niraj Pandey",
+      "phone": "+9779862732026",
+      "email": "nirajpandey10521@gmail.com",
+      "topic": "jhh",
+      "timing": "Earliest available, 1 day after booking",
+      "appointment": "Tuesday, June 2, 2026",
+      "id": "5eac4c23-1c87-414f-b8eb-3ce8226f1ffb",
+      "createdAt": "2026-06-01T14:28:18.360Z",
+      "emailSent": false,
+      "emailMessage": "Saved to database, but EmailJS returned 403: API access from non-browser environments is currently disabled.Enable this option in https://dashboard.emailjs.com/admin/account/security"
+    },
+    {
+      "type": "Problem",
+      "name": "Niraj Pandey",
+      "phone": "9862732026",
+      "email": "nirajpandey10521@gmail.com",
+      "caseType": "Property or land dispute",
+      "problem": "bbkj",
+      "id": "b732b69b-d331-42a8-a614-4d5d405a9d46",
+      "createdAt": "2026-06-01T14:27:05.523Z",
+      "emailSent": false,
+      "emailMessage": "Saved to database, but EmailJS returned 403: API access from non-browser environments is currently disabled.Enable this option in https://dashboard.emailjs.com/admin/account/security"
+    },
+    {
+      "type": "Consultation Booking",
+      "name": "Niraj Pandey",
+      "phone": "+9779862732026",
+      "email": "nirajpandey10521@gmail.com",
+      "topic": "jhh",
+      "timing": "Earliest available, 1 day after booking",
+      "appointment": "Tuesday, June 2, 2026",
+      "id": "0c20d48a-fb3e-4dcf-b20d-5c0b3cf35952",
+      "createdAt": "2026-06-01T14:24:42.869Z",
+      "emailSent": false,
+      "emailMessage": "Saved to database, but EmailJS returned 404: Account not found"
+    },
+    {
+      "type": "Problem",
+      "name": "Niraj Pandey",
+      "phone": "9862732026",
+      "email": "nirajpandey10521@gmail.com",
+      "caseType": "Property or land dispute",
+      "problem": "ighjjh",
+      "id": "8a053995-7887-4cf5-8b32-8192dd003605",
+      "createdAt": "2026-06-01T14:24:05.732Z",
+      "emailSent": false,
+      "emailMessage": "Saved to database, but EmailJS returned 404: Account not found"
+    }
+  ]
+}
